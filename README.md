@@ -1,0 +1,514 @@
+[aj_global.index.html](https://github.com/user-attachments/files/34472531/aj_global.index.html)
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Global 國際教育 | 頂級遊學與海外留學代辦</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind configuration for custom gold & navy colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#070B19',
+                            900: '#0B132B',
+                            800: '#111D3A',
+                            700: '#1C2D5A',
+                        },
+                        gold: {
+                            400: '#E6C567',
+                            500: '#D4AF37',
+                            650: '#B89728',
+                            600: '#C5A059',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Playfair Display', 'Noto Serif TC', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3E0AA 0%, #D4AF37 50%, #AA8220 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #E6C567 0%, #D4AF37 50%, #B89728 100%);
+        }
+        .glass-card {
+            background: rgba(17, 29, 58, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .glass-nav {
+            background: rgba(7, 11, 25, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-gray-100 font-sans antialiased selection:bg-gold-500 selection:text-navy-950">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-gold-500/50 flex items-center justify-center bg-navy-900 group-hover:border-gold-500 transition-colors">
+                    <span class="font-serif text-gold-400 font-bold text-lg tracking-wider">AJ</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg tracking-widest text-white">AJ GLOBAL</span>
+                    <span class="text-[10px] tracking-[0.25em] text-gold-400 uppercase font-medium">國際教育 頂級遊學</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors tracking-wide">品牌理念</a>
+                <a href="#tours" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors tracking-wide">最新遊學團</a>
+                <a href="#advantages" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors tracking-wide">尊榮服務</a>
+                <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors tracking-wide">聯絡我們</a>
+            </nav>
+
+            <!-- Line CTA Button -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="gold-gradient-bg text-navy-950 px-6 py-2.5 rounded-full font-semibold text-sm shadow-lg shadow-gold-500/20 hover:opacity-95 hover:scale-105 transition-all flex items-center space-x-2">
+                    <i class="fab fa-line text-lg"></i>
+                    <span>Line 官方諮詢</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gold-400 focus:outline-none p-2">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900/95 border-b border-gold-500/20 px-6 py-6 space-y-4 backdrop-blur-xl">
+            <a href="#about" class="block text-base font-medium text-gray-200 hover:text-gold-400 transition-colors">品牌理念</a>
+            <a href="#tours" class="block text-base font-medium text-gray-200 hover:text-gold-400 transition-colors">最新遊學團</a>
+            <a href="#advantages" class="block text-base font-medium text-gray-200 hover:text-gold-400 transition-colors">尊榮服務</a>
+            <a href="#contact" class="block text-base font-medium text-gray-200 hover:text-gold-400 transition-colors">聯絡我們</a>
+            <div class="pt-4 border-t border-gray-800">
+                <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full gold-gradient-bg text-navy-950 py-3 rounded-full font-semibold text-center flex items-center justify-center space-x-2 shadow-md">
+                    <i class="fab fa-line text-xl"></i>
+                    <span>Line 官方諮詢</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950">
+        <!-- Decorative Glow Backgrounds -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 py-20">
+            <!-- Subtle Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-gold-500/40 bg-gold-500/5 mb-8 animate-pulse">
+                <i class="fas fa-crown text-gold-400 text-xs"></i>
+                <span class="text-xs tracking-[0.2em] text-gold-400 uppercase font-medium">Elite International Education</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+                探索世界，<span class="gold-gradient-text font-serif italic">預見卓越未來</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto font-light mb-10 leading-relaxed tracking-wide">
+                專屬頂級遊學與海外留學代辦服務，結合全球頂尖學府資源，量身訂製每位菁英學子的非凡國際視野。
+            </p>
+
+            <!-- Dual CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto gold-gradient-bg text-navy-950 px-8 py-4 rounded-full font-bold text-base shadow-xl shadow-gold-500/20 hover:opacity-95 hover:scale-105 transition-all flex items-center justify-center space-x-3">
+                    <i class="fab fa-line text-xl"></i>
+                    <span>立即諮詢 (Line)</span>
+                </a>
+                <a href="#tours" class="w-full sm:w-auto bg-transparent border border-gold-500/60 text-gold-400 px-8 py-4 rounded-full font-semibold text-base hover:bg-gold-500/10 hover:border-gold-400 transition-all flex items-center justify-center space-x-2">
+                    <span>熱門遊學團</span>
+                    <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Trust Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20 pt-16 border-t border-gold-500/20 max-w-3xl mx-auto">
+                <div>
+                    <div class="font-serif text-3xl sm:text-4xl font-bold gold-gradient-text mb-1">100%</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-400">頂尖名校錄取推薦</div>
+                </div>
+                <div>
+                    <div class="font-serif text-3xl sm:text-4xl font-bold gold-gradient-text mb-1">VIP</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-400">管家式專屬顧問</div>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <div class="font-serif text-3xl sm:text-4xl font-bold gold-gradient-text mb-1">Global</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-400">英美加頂級遊學網</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us (品牌理念) -->
+    <section id="about" class="py-24 relative bg-navy-900 border-t border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold-400 text-xs uppercase tracking-[0.3em] font-semibold block mb-3">Our Philosophy</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">尊榮定位，成就非凡</h2>
+                <div class="w-16 h-0.5 gold-gradient-bg mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-gold-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-university text-gold-400 text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">頂尖學府資源</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        嚴選英、美、加等世界百大名校及貴族學院獨家合作，提供最正統且優質的學術與文化體驗。
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-gold-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-sliders-h text-gold-400 text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">客製化學涯規劃</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        深入了解每位學員的特質與未來志向，量身打造最合適的短期遊學與長期留學升學藍圖。
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-gold-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-800 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gem text-gold-400 text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">尊榮管家式服務</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        從出發前的行前精緻培訓、簽證代辦，到海外落地陪伴與返國後諮詢，提供全天候管家式守護。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Study Tours (最新遊學團資訊) -->
+    <section id="tours" class="py-24 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-gold-400 text-xs uppercase tracking-[0.3em] font-semibold block mb-3">Exclusive Programs</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">2026 最新尊榮遊學團</h2>
+                </div>
+                <p class="text-gray-400 text-sm mt-4 md:mt-0 font-light max-w-sm">
+                    席位有限，名額採預約制審核，為確保品質每團精緻小班。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tour 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-500/60 transition-all duration-300">
+                    <div>
+                        <!-- Image Container with Overlay -->
+                        <div class="relative h-56 overflow-hidden bg-navy-800">
+                            <img src="https://placehold.co/600x400/111D3A/D4AF37?text=Oxford+Cambridge" alt="英國牛津劍橋菁英遊學營" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" onerror="this.src='https://placehold.co/600x400/111D3A/D4AF37?text=AJ+Global'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+                            <div class="absolute top-4 right-4 bg-navy-950/80 border border-gold-500/40 px-3 py-1 rounded-full text-xs text-gold-400 backdrop-blur-md">
+                                限量 15 席
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-2 text-gold-400 text-xs font-medium mb-2">
+                                <i class="far fa-clock"></i>
+                                <span>暑期 3 週 / 4 週</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                英國牛津劍橋菁英遊學營
+                            </h3>
+                            <p class="text-gray-300 text-sm font-light mb-4 line-clamp-2">
+                                入住牛津大學學院宿舍，體驗正統英式學院生活，結合頂級思辨課程與倫敦深度藝文探索。
+                            </p>
+                            <div class="space-y-2 mb-6 border-t border-gray-800 pt-4">
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>劍橋教授大師講座與學術工作坊</span>
+                                </div>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>溫莎堡與倫敦西區音樂劇VIP饗宴</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full bg-navy-800 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-navy-950 py-3 rounded-xl font-semibold text-sm transition-all flex items-center justify-center space-x-2">
+                            <span>了解詳情 / 預約名額</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tour 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-500/60 transition-all duration-300">
+                    <div>
+                        <!-- Image Container with Overlay -->
+                        <div class="relative h-56 overflow-hidden bg-navy-800">
+                            <img src="https://placehold.co/600x400/111D3A/D4AF37?text=US+East+Ivy" alt="美國東岸頂尖名校探索之旅" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" onerror="this.src='https://placehold.co/600x400/111D3A/D4AF37?text=AJ+Global'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+                            <div class="absolute top-4 right-4 bg-navy-950/80 border border-gold-500/40 px-3 py-1 rounded-full text-xs text-gold-400 backdrop-blur-md">
+                                菁英專屬
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-2 text-gold-400 text-xs font-medium mb-2">
+                                <i class="far fa-clock"></i>
+                                <span>暑期 2.5 週</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                美國東岸頂尖名校探索之旅
+                            </h3>
+                            <p class="text-gray-300 text-sm font-light mb-4 line-clamp-2">
+                                深度造訪長春藤盟校（哈佛、耶魯、哥大、麻省理工），由學長姐帶領參訪，開啟世界級夢想。
+                            </p>
+                            <div class="space-y-2 mb-6 border-t border-gray-800 pt-4">
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>波士頓與紐約名校獨家深度交流</span>
+                                </div>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>華爾街金融與矽谷創新思維見學</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full bg-navy-800 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-navy-950 py-3 rounded-xl font-semibold text-sm transition-all flex items-center justify-center space-x-2">
+                            <span>了解詳情 / 預約名額</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tour 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-500/60 transition-all duration-300">
+                    <div>
+                        <!-- Image Container with Overlay -->
+                        <div class="relative h-56 overflow-hidden bg-navy-800">
+                            <img src="https://placehold.co/600x400/111D3A/D4AF37?text=Vancouver+Canada" alt="加拿大溫哥華極致遊學體驗" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" onerror="this.src='https://placehold.co/600x400/111D3A/D4AF37?text=AJ+Global'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+                            <div class="absolute top-4 right-4 bg-navy-950/80 border border-gold-500/40 px-3 py-1 rounded-full text-xs text-gold-400 backdrop-blur-md">
+                                自然與人文
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center space-x-2 text-gold-400 text-xs font-medium mb-2">
+                                <i class="far fa-clock"></i>
+                                <span>暑期 3 週</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                                加拿大溫哥華極致遊學體驗
+                            </h3>
+                            <p class="text-gray-300 text-sm font-light mb-4 line-clamp-2">
+                                結合頂級英語特訓與北美自然探索，兼具口語實力提升與加拿大洛磯山脈壯麗人文冒險。
+                            </p>
+                            <div class="space-y-2 mb-6 border-t border-gray-800 pt-4">
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>英屬哥倫比亞大學(UBC)營地生活</span>
+                                </div>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-check text-gold-400 mr-2"></i>
+                                    <span>多元文化與戶外領袖拓展訓練</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full bg-navy-800 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-navy-950 py-3 rounded-xl font-semibold text-sm transition-all flex items-center justify-center space-x-2">
+                            <span>了解詳情 / 預約名額</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages / Why AJ Global -->
+    <section id="advantages" class="py-24 bg-navy-900 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-gold-400 text-xs uppercase tracking-[0.3em] font-semibold block mb-3">Why Choose Us</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">尊榮信賴，成就每位學員的夢想軌跡</h2>
+                    <p class="text-gray-300 font-light mb-8 leading-relaxed">
+                        我們深信，每位孩子都是獨一無二的未來領袖。AJ Global 國際教育不只是代辦，更是您全方位教育的摯誠夥伴，從細節著手，成就超越期待的旅程。
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-navy-800 border border-gold-500/40 flex items-center justify-center flex-shrink-0 text-gold-400 mt-1">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">嚴格安全審核機制</h4>
+                                <p class="text-gray-400 text-sm font-light">全天候緊急聯絡網、嚴選寄宿家庭與五星級住宿標準，讓家長百分之百安心。</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-navy-800 border border-gold-500/40 flex items-center justify-center flex-shrink-0 text-gold-400 mt-1">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">豐富實戰名校經驗</h4>
+                                <p class="text-gray-400 text-sm font-light">資深顧問團隊具備英美名校背景，熟稔海外教育體系與升學直升通道。</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-navy-800 border border-gold-500/40 flex items-center justify-center flex-shrink-0 text-gold-400 mt-1">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">一對一專屬顧問對話</h4>
+                                <p class="text-gray-400 text-sm font-light">提供私密、尊榮的預約制諮詢空間，為您做最周全的長短期學習藍圖規劃。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Element Box -->
+                <div class="relative">
+                    <div class="absolute inset-0 gold-gradient-bg rounded-3xl blur-2xl opacity-10"></div>
+                    <div class="relative glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30">
+                        <h3 class="font-serif text-2xl font-bold text-white mb-6">預約一對一尊榮諮詢</h3>
+                        <p class="text-gray-300 text-sm font-light mb-6">
+                            立即透過 LINE 與我們的資深教育顧問聯繫，為您或您的孩子開啟專屬國際教育第一步。
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 text-sm text-gray-300">
+                                <i class="fas fa-check-circle text-gold-400"></i>
+                                <span>免費索取 2026 最新遊學團精美手冊</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm text-gray-300">
+                                <i class="fas fa-check-circle text-gold-400"></i>
+                                <span>15分鐘專業學涯定位分析</span>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full gold-gradient-bg text-navy-950 py-4 rounded-xl font-bold text-center block shadow-lg hover:opacity-95 transition-all">
+                                <i class="fab fa-line text-lg mr-2"></i> 立即加入 Line 官方帳號
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Links -->
+    <footer id="contact" class="bg-navy-950 border-t border-gold-500/20 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-9 h-9 rounded-full border border-gold-500/50 flex items-center justify-center bg-navy-900">
+                            <span class="font-serif text-gold-400 font-bold text-sm tracking-wider">AJ</span>
+                        </div>
+                        <span class="font-serif font-bold text-lg tracking-widest text-white">AJ GLOBAL 國際教育</span>
+                    </div>
+                    <p class="text-gray-400 text-sm font-light max-w-sm mb-6 leading-relaxed">
+                        結合頂級美學與嚴謹學術的海外留學與遊學代辦專家，引領台灣菁英走向世界舞台。
+                    </p>
+                    <div class="text-xs text-gray-500">
+                        服務專線：(02) 2345-6789<br>
+                        台北市信義區尊榮金融中心 32 樓
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-serif font-semibold text-white mb-4 tracking-wider">快速導覽</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400 font-light">
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">品牌理念</a></li>
+                        <li><a href="#tours" class="hover:text-gold-400 transition-colors">最新遊學團</a></li>
+                        <li><a href="#advantages" class="hover:text-gold-400 transition-colors">尊榮服務</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition-colors">聯絡我們</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Social & Connect -->
+                <div>
+                    <h4 class="font-serif font-semibold text-white mb-4 tracking-wider">官方社群與諮詢</h4>
+                    <div class="flex flex-col space-y-3">
+                        <!-- LINE -->
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 px-4 py-2.5 rounded-xl bg-navy-900 border border-gold-500/30 hover:border-gold-500 text-gray-300 hover:text-gold-400 transition-all text-sm group">
+                            <i class="fab fa-line text-lg text-emerald-400"></i>
+                            <span class="font-medium">LINE 官方帳號</span>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 px-4 py-2.5 rounded-xl bg-navy-900 border border-gold-500/30 hover:border-gold-500 text-gray-300 hover:text-gold-400 transition-all text-sm group">
+                            <i class="fab fa-instagram text-lg text-pink-400"></i>
+                            <span class="font-medium">Instagram 精彩花絮</span>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 px-4 py-2.5 rounded-xl bg-navy-900 border border-gold-500/30 hover:border-gold-500 text-gray-300 hover:text-gold-400 transition-all text-sm group">
+                            <i class="fab fa-facebook text-lg text-blue-400"></i>
+                            <span class="font-medium">Facebook 粉絲專頁</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-light">
+                <p>Copyright © 2026 AJ Global. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-gold-400 transition-colors">隱私權政策</a>
+                    <a href="#" class="hover:text-gold-400 transition-colors">服務條款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
